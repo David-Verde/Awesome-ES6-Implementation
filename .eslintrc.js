@@ -5,6 +5,8 @@ module.exports = {
     },
     "parserOptions": {
         "ecmaVersion": "latest"
+        jsx: true
+        modules: true
     },
     "rules": {
     }
