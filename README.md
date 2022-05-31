@@ -9,6 +9,7 @@
 
 - HTML, CSS and Javascript
 - Linters
+-ES6
 
 
 ## Live Demo
