@@ -115,7 +115,7 @@ addBook.addEventListener('click', () => {
   newAuthor.value = '';
 });
 
-function removeLi(id) {
+const removeLi = (id) => {
   const li = document.getElementById(`book${id}`);
   li.remove();
   bookData = bookData.filter((book) => book.id !== id);

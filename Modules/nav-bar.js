@@ -9,12 +9,12 @@ const contactSection = document.getElementById('contact');
 allBooksSection.classList.add('active');
 allBooksSection.classList.remove('hide-class');
 
-function toggleVisbility(activeEle) {
+const toggleVisbility = (activeEle) => {
   activeEle.classList.toggle('active');
   activeEle.classList.remove('hide-class');
 }
 
-function clearClasses(element1, element2) {
+const clearClasses = (element1, element2) => {
   element1.classList.remove('active');
   element1.classList.add('hide-class');
 
