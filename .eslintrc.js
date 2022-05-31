@@ -4,19 +4,8 @@ module.exports = {
         "es2021": true
     },
     "parserOptions": {
-        "ecmaVersion": "latest"
+        "sourceType": "module",
     },
     "rules": {
     }
-    {
-  "parser": "babel-eslint",
-  "rules": {
-    "strict": 0
-  }
-  {
-    "parserOptions": {
-        "sourceType": "module",
-    }
-}
-}
 }
