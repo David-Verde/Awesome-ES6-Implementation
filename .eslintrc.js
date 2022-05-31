@@ -9,9 +9,14 @@ module.exports = {
     "rules": {
     }
     {
-        "parser": "babel-eslint",
-        "rules": {
-          "strict": 0
-        }
-      }
+  "parser": "babel-eslint",
+  "rules": {
+    "strict": 0
+  }
+  {
+    "parserOptions": {
+        "sourceType": "module",
+    }
+}
+}
 }
