@@ -10,7 +10,7 @@ const newAuthor = document.getElementById('new-author');
 const allBooks = document.getElementById('all-books');
 let bookData = [];
 
-function setBorder() {
+const setBorder = () => {
   const data = JSON.parse(localStorage.getItem('bookData'));
   if (bookData.length > 0 || data.length > 0) {
     allBooks.classList.add('border');
@@ -18,7 +18,7 @@ function setBorder() {
     allBooks.classList.remove('border');
   }
 }
-function setStyles() {
+const setStyles = () => {
   let index = 1;
   const liList = document.querySelectorAll('.book');
   liList.forEach((element) => {
@@ -48,7 +48,7 @@ class Book {
 }
 
 // Function create the div and li for each new book
-function getLi(book) {
+const getLi = (book) => {
   const divTitle = document.createElement('div');
   const divAuthor = document.createElement('div');
   const divTitleAuthor = document.createElement('div');
@@ -80,13 +80,13 @@ function getLi(book) {
 
 // Store data to local storage.
 
-function storeData() {
+const storeData = () => {
   localStorage.setItem('bookData', JSON.stringify(bookData));
 }
 
 // Load data from local storage.
 
-function loadData() {
+const loadData = () => {
   const data = localStorage.getItem('bookData');
   if (data) {
     bookData = JSON.parse(data);

@@ -1,4 +1,4 @@
-function updateTime() {
+const updateTime = () => {
   const dateInfo = new Date();
 
   /* time */
