@@ -1,11 +1,21 @@
 module.exports = {
-    "env": {
-        "browser": true,
-        "es2021": true
-    },
-    "parserOptions": {
-        "ecmaVersion": "latest"
-    },
-    "rules": {
+    {
+        "ecmaFeatures": {
+            "modules": true,
+            "spread" : true,
+            "restParams" : true
+        },
+        "env" : {
+            "browser" : true,
+            "node" : true,
+            "es6" : true
+        },
+        "rules" : {
+            "no-unused-vars" : 2,
+            "no-undef" : 2
+        },
+        "parserOptions": {
+            "sourceType": "module"
+        }
     }
 }
