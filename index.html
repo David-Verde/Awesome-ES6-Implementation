@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="html.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1 id="aw">Awesome Books</h1>
+  <nav>
+    <a id="awesome" href="index.html">Awesome Books</a>
+    <ul class="hover">
+      <li><a href="#" id="list-link">List</a></li>
+      <li><a href="#" id="add-link">Add</a></li>
+      <li><a href="#" id="contact-link">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="time">
+    <span class="hms"></span>
+    <span class="ampm"></span>
+    <br>
+    <span class="date"></span>
+  </div>
+  <section id="all-books">
+    <ul id="book-list"></ul>
+  </section>
+  <section id="add-new-book" class="hide-class">
+    <hr>
+    <fieldset id="new-book">
+      <h2>Add Books</h2>
+      <div class="input-container">
+        <input type="text" name="title" id="new-title" placeholder="Title">
+        <input type="text" name="author" id="new-author" placeholder="Author">
+        <div class="btn-container">
+          <button type="button" id="add-book">Add</button>
+        </div>
+      </div>
+    </fieldset>
+  </section>
+  <section id="contact" class="hide-class">
+    <h2>Contact Information</h2>
+    <p>Do you have any questions or just want to say "Hello"? You can reach out to us!</p>
+    <ul>
+      <li>Our email <a href="mailto:mail@mail.com">mail@mail.com</a>.</li>
+      <li>Our phone number <a href="tel:+18005551234">+1 800 5551235</a>.</li>
+      <li>Our address: Main St 1234, 54321 City, Country.</li>
+    </ul>
+  </section>
+
+
+  <footer>
+    <p>&copy;Copyright 2022 DMW. All rights reserved.</p>
+  </footer>
+
+  <script type="module" src="script.js"></script>
+
+
+</html>
